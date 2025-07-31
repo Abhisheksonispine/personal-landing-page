@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Abhishek Soni - Spine Surgeon | Robotic Spine Surgery Specialist</title>
+    <meta name="description" content="Dr. Abhishek Soni - Leading Spine Surgeon at Manipal Hospitals with expertise in robotic-assisted spine surgery, minimally invasive procedures, and comprehensive spine care.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            object-fit: cover;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border: 4px solid #fff;
+            background: linear-gradient(45deg, #f0f2f5, #e1e8ed);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: #667eea;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .hero-content .title {
+            font-size: 1.3rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .hero-content .subtitle {
+            font-size: 1.1rem;
+            color: #34495e;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #7f8c8d;
+            font-size: 0.95rem;
+        }
+
+        .contact-item i {
+            color: #667eea;
+            width: 20px;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 45px rgba(31, 38, 135, 0.5);
+        }
+
+        .card h2 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card h2 i {
+            color: #667eea;
+        }
+
+        .specialties {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .specialty-item {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            text-align: center;
+            font-weight: 500;
+            transition: transform 0.3s ease;
+        }
+
+        .specialty-item:hover {
+            transform: scale(1.05);
+        }
+
+        .languages {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .language-tag {
+            background: linear-gradient(135deg, #48c6ef, #6f86d6);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .memberships {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .membership-item {
+            background: linear-gradient(135deg, #a8edea, #fed6e3);
+            color: #2c3e50;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: transform 0.3s ease;
+        }
+
+        .membership-item:hover {
+            transform: scale(1.05);
+        }
+
+        .publications {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .publications h2 {
+            color: #2c3e50;
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .publication-item {
+            background: linear-gradient(135deg, #ffecd2, #fcb69f);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .publication-item:hover {
+            transform: translateY(-3px);
+        }
+
+        .publication-title {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .publication-details {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 0.3rem;
+        }
+
+        .publication-year {
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        .cta-section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 3rem;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 0.5rem;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        .cta-button.whatsapp {
+            background: linear-gradient(135deg, #25d366, #128c7e);
+        }
+
+        .cta-button.whatsapp:hover {
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+        }
+
+        footer {
+            background: rgba(44, 62, 80, 0.95);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            border-radius: 20px 20px 0 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 2rem;
+            }
+
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+
+            .contact-info {
+                justify-content: center;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .contact-item {
+                justify-content: center;
+            }
+
+            .specialties {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-button {
+                display: block;
+                margin: 0.5rem auto;
+                width: fit-content;
+            }
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin: 1rem 0;
+            text-align: center;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .stat-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="hero">
+                <div class="profile-image">
+                    <!-- Replace this with your photo: <img src="photo.jpg" alt="Dr. Abhishek Soni" class="profile-image"> -->
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <div class="hero-content">
+                    <h1>Dr. Abhishek Soni</h1>
+                    <div class="title">Consultant - Spine Care</div>
+                    <div class="subtitle">Manipal Hospitals, Old Airport Road, Bangalore</div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>OPD: +91 80 25023334</span>
+                        </div>
+                        <a href="https://wa.me/917405495751" target="_blank" class="contact-item" style="text-decoration: none; color: inherit;">
+                            <i class="fab fa-whatsapp" style="color: #25d366;"></i>
+                            <span>WhatsApp: +91 74054 95751</span>
+                        </a>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>abhishek668@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Manipal Hospital, Old Airport Road, Bengaluru - 560017</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="left-column">
+                <div class="card">
+                    <h2><i class="fas fa-user-doctor"></i>About Me</h2>
+                    <p>I am an experienced spine surgeon with <strong>over 8 years of expertise</strong> in comprehensive spine care at Manipal Hospitals, Old Airport Road, Bangalore. As part of the prestigious <strong>MIRSS (Manipal Institute of Robotic Spine Surgery)</strong>, I specialize in cutting-edge robotic-assisted spine surgery and minimally invasive techniques.</p>
+                    
+                    <div class="highlight-box">
+                        <h3>Experience Highlights</h3>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-number">8+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">1000+</span>
+                                <span class="stat-label">Surgeries</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">12+</span>
+                                <span class="stat-label">Research Papers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>I am dedicated to providing compassionate, patient-centered care while utilizing the most advanced surgical techniques available. My approach combines technical expertise with clear communication, ensuring patients understand every aspect of their treatment journey.</p>
+                </div>
+
+                <div class="card">
+                    <h2><i class="fas fa-graduation-cap"></i>Education & Qualifications</h2>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 1rem; padding: 1rem; background: linear-gradient(135deg, #e3f2fd, #bbdefb); border-radius: 10px;">
+                            <strong>FNB Fellowship in Spine Surgery</strong><br>
+                            <span style="color: #666;">Manipal Hospitals, Bangalore</span>
+                        </li>
+                        <li style="margin-bottom: 1rem; padding: 1rem; background: linear-gradient(135deg, #f3e5f5, #e1bee7); border-radius: 10px;">
+                            <strong>MS in Orthopaedics</strong><br>
+                            <span style="color: #666;">Civil Hospital, Ahmedabad</span>
+                        </li>
+                        <li style="margin-bottom: 1rem; padding: 1rem; background: linear-gradient(135deg, #e8f5e8, #c8e6c9); border-radius: 10px;">
+                            <strong>MBBS</strong><br>
+                            <span style="color: #666;">BJ Medical College</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h2><i class="fas fa-stethoscope"></i>Specializations</h2>
+                    <div class="specialties">
+                        <div class="specialty-item">Robotic-Assisted Spine Surgery</div>
+                        <div class="specialty-item">Minimally Invasive Spinal Surgery</div>
+                        <div class="specialty-item">Disc Herniations</div>
+                        <div class="specialty-item">Degenerative Disc Diseases</div>
+                        <div class="specialty-item">Spinal Deformities</div>
+                        <div class="specialty-item">Spinal Tumours</div>
+                        <div class="specialty-item">Spine Infections & Tuberculosis</div>
+                        <div class="specialty-item">Revision Spine Surgery</div>
+                        <div class="specialty-item">Spinal Fusions</div>
+                        <div class="specialty-item">Vertebroplasty</div>
+                        <div class="specialty-item">Kyphoplasty</div>
+                        <div class="specialty-item">Deformity Correction</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="card">
+                    <h2><i class="fas fa-comments"></i>Languages</h2>
+                    <div class="languages">
+                        <div class="language-tag">English</div>
+                        <div class="language-tag">Hindi</div>
+                        <div class="language-tag">Bengali</div>
+                        <div class="language-tag">Urdu</div>
+                        <div class="language-tag">Kannada</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2><i class="fas fa-certificate"></i>Professional Memberships</h2>
+                    <div class="memberships">
+                        <div class="membership-item">ASSI</div>
+                        <div class="membership-item">MISSAB</div>
+                        <div class="membership-item">SMISS</div>
+                        <div class="membership-item">Eurospine</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2><i class="fas fa-robot"></i>MIRSS Association</h2>
+                    <p>Part of India's first complete robotic spine surgery suite at Manipal Institute of Robotic Spine Surgery (MIRSS), utilizing:</p>
+                    <ul style="margin-top: 1rem;">
+                        <li>Second generation MazorX Robot</li>
+                        <li>O-arm technology</li>
+                        <li>Advanced surgical tables</li>
+                        <li>State-of-the-art navigation systems</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="publications">
+            <h2><i class="fas fa-file-medical"></i>Selected Robotic Spine Surgery Publications</h2>
+            
+            <div class="publication-item">
+                <div class="publication-title">Evaluating the feasibility of pinless robot-assisted spine surgery: a prospective study of 750 cases and 3,924 screws in the thoracolumbar spine in India</div>
+                <div class="publication-details">Asian Spine Journal</div>
+                <div class="publication-year">2025</div>
+            </div>
+
+            <div class="publication-item">
+                <div class="publication-title">Robotic-assisted kyphoplasty demonstrates superior efficacy, safety, and procedural efficiency compared to fluoroscopy-guided techniques: a retrospective analysis of 240 patients</div>
+                <div class="publication-details">Journal of Robotic Surgery, Volume 19, Number 1, pp. 1-10</div>
+                <div class="publication-year">2025</div>
+            </div>
+
+            <div class="publication-item">
+                <div class="publication-title">Robotic-assisted Spine Surgeries: An Analysis of 360 Cases from Occiput to Sacrum</div>
+                <div class="publication-details">Journal of Orthopaedic Trauma and Reconstruction, Volume 2, Number 1, pp. 12-18</div>
+                <div class="publication-year">2025</div>
+            </div>
+
+            <div class="publication-item">
+                <div class="publication-title">Robotic spine systems: overcoming surgeon experience in pedicle screw accuracy: a prospective study</div>
+                <div class="publication-details">Asian Spine Journal, Volume 18, Number 5, p. 663</div>
+                <div class="publication-year">2024</div>
+            </div>
+
+            <div class="publication-item">
+                <div class="publication-title">Flattening the learning curve–early experience of robotic-assisted pedicle screw placement in spine surgery</div>
+                <div class="publication-details">Journal of Orthopaedics, Volume 57, pp. 49-54</div>
+                <div class="publication-year">2024</div>
+            </div>
+
+            <div class="publication-item">
+                <div class="publication-title">Robotic-assisted Cervical Pedicle Screw Fixation With Custom Instruments: An Analysis of 206 Screws in 22 Patients</div>
+                <div class="publication-details">Clinical Spine Surgery</div>
+                <div class="publication-year">2025</div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2 style="margin-bottom: 1rem; color: #2c3e50;">Schedule a Consultation</h2>
+            <p style="margin-bottom: 2rem; color: #666;">Experience world-class spine care with advanced robotic surgery techniques</p>
+            <a href="tel:+918025023334" class="cta-button">
+                <i class="fas fa-phone"></i>
+                Call OPD: +91 80 25023334
+            </a>
+            <a href="https://wa.me/917405495751" class="cta-button whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                WhatsApp: +91 74054 95751
+            </a>
+            <a href="mailto:abhishek668@gmail.com" class="cta-button">
+                <i class="fas fa-envelope"></i>
+                Send Email
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Dr. Abhishek Soni. All rights reserved. | Part of Manipal Hospitals Network</p>
+            <p style="margin-top: 0.5rem; opacity: 0.8;">Advanced Spine Care • Robotic Surgery • Compassionate Treatment</p>
+        </div>
+    </footer>
+</body>
+</html>
